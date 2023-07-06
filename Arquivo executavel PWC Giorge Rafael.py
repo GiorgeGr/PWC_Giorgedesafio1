@@ -1,4 +1,6 @@
 #DESAFIO PWC#
+print("Desafio de código PWC, Giorge Rafael.")
+print(" ")
 #DESAFIO NÚMERO 1: Reverter as ordens das palavras nas frases mantendo a ordem das palavras.#
 print("Desafio #1: Reverter a string mantendo a ordem das palavras..")
 frasedesafio1 = input("Digite a frase aqui:")
@@ -26,4 +28,12 @@ for duplicado in frase2:
 #Se o caracter não estiver em "repetidos", adicionamos ele e em seguida concatenamos para a "frase_formatada"#
 print("Frase formatada:", frase_formatada)
 print(" ")
+
+#DESAFIO NÚMERO 3: ENCONTRAR A SUBSTRING PALINDROMA MAIS LONGA DA FRASE#
+def encontrar_maior_pl(frase3):
+  n = len(frase3)
+  maior_pl = ""
+#começei o código definindo uma função que fará a varredura da string, e a variavel n para saber o tamanho#
+#na variavel maior_pl vamos armazenar a maior subtring que for encontrada#
+
 
