@@ -30,23 +30,27 @@ print("Frase formatada:", frase_formatada)
 print(" ")
 
 
-# DESAFIO NÚMERO 3: ENCONTRAR A SUBSTRING PALINDROMA MAIS LONGA DA FRASE#
+# DESAFIO NÚMERO 3: ENCONTRAR A SUBSTRING PALINDROMA MAIS LONGA DA FRASE
 def encontrar_maior_pl(frase3):
     n = len(frase3)
     maior_pl = ""
+# começei o código definindo uma função que fará a varredura da string, e a variavel n para saber o tamanho
+# na variavel maior_pl vamos armazenar a maior subtring que for encontrada
+    for i in range(n):
+        for j in range(i, n):
+            substring = frase3[i:j + 1]
+            if substring == substring[::-1] and len(substring) > len(maior_pl):
+                maior_pl = substring
 
-
-# começei o código definindo uma função que fará a varredura da string, e a variavel n para saber o tamanho#
-# na variavel maior_pl vamos armazenar a maior subtring que for encontrada#
-for i in range(n):
-    for j in range(i, n):
-        substring = frase3[i:j + 1]
-        if substring == substring[::-1] and len(substring) > len(maior_pl):
-            maior_pl = substring
-
-            return maior_pl
+    return maior_pl
 # acima criei o loop for para percorrer os indices de 0 a n-1 e a variavel i indica o indice atual do loop externo#
 # o loop for aninhado dentro do loop externo percorre os indices de i até n-1 e a variavel j representa o indice atual do loop interno#
-digitar = input("Digite aqui:")
-result = encontrar_maior_pl(frase3)
+print("Desafio #3: encontrar a substring palindroma mais longa na frase..")
+digitar_frase = input("Digite aqui: ")
+result = encontrar_maior_pl(digitar_frase)
 print("Maior substring palindrômica encontrada:", result)
+#Então retornamos a maior substring palindromica encontrada na frase que foi digitada#
+
+#Desafio número 4#
+print("Desafio #4:coloque em maiúsula a primeira letra de cada frase..")
+
