@@ -50,7 +50,15 @@ digitar_frase = input("Digite aqui: ")
 result = encontrar_maior_pl(digitar_frase)
 print("Maior substring palindrômica encontrada:", result)
 #Então retornamos a maior substring palindromica encontrada na frase que foi digitada#
+print(" ")
 
 #Desafio número 4#
-print("Desafio #4:coloque em maiúsula a primeira letra de cada frase..")
+print("Desafio #4:coloque em maiúscula a primeira letra de cada frase..")
 
+frase4 = input("Digite aqui: ")
+pont = frase4.split(". ")
+
+frase4form = [x.capitalize() for x in pont]
+frase_pronta = ". ".join(frase4form)
+
+print("A frase formatada fica assim:", frase_pronta)
