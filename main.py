@@ -62,3 +62,7 @@ frase4form = [x.capitalize() for x in pont]
 frase_pronta = ". ".join(frase4form)
 
 print("A frase formatada fica assim:", frase_pronta)
+# criei uma função que usa o separador split para separar a string em partes#
+#em seguida um list comprehension para capitalizar cada letra após o ponto final e deixar maiuscula#
+print(" ")
+
