@@ -66,3 +66,15 @@ print("A frase formatada fica assim:", frase_pronta)
 #em seguida um list comprehension para capitalizar cada letra após o ponto final e deixar maiuscula#
 print(" ")
 
+#Desafio número 5: verificar se a string é um anagrama de um palindromo#
+print("Desafio #5: verificar se a string é um anagrama de um palindromo.")
+
+frase5 = input("Digite aqui: ")
+reverso = frase5[::-1]
+
+if frase5 == reverso:
+  print(True)
+  print("é um anagrama de palíndromo.")
+else:
+    print(False)
+    print("Não é um anagrama de palíndromo")
