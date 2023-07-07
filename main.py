@@ -71,10 +71,18 @@ print("Desafio #5: verificar se a string é um anagrama de um palindromo.")
 
 frase5 = input("Digite aqui: ")
 reverso = frase5[::-1]
-
+#começei criando uma variavel que analisa a frase de entrada de trás para frente#
+#em seguida a condição vai analisar se as duas váriaveis são iguais e com base no resultado retornar True ou False#
 if frase5 == reverso:
   print(True)
   print("é um anagrama de palíndromo.")
 else:
     print(False)
     print("Não é um anagrama de palíndromo")
+
+#observações finais#
+print(" ")
+
+print("Agradeço a oportunidade de ter participado do desafio de código da PWC")
+fim = input("para finalizar digite enter...")
+print(fim)
